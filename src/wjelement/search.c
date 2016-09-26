@@ -900,7 +900,7 @@ WJElement WJESearch(WJElement container, const char *path, WJEAction *action, WJ
 	return(NULL);
 }
 
-EXPORT WJElement _WJEGet(WJElement container, char *path, WJElement last, const char *file, const int line)
+EXPORT WJElement _WJEGet(WJElement container, const char *path, WJElement last, const char *file, const int line)
 {
 	WJEAction	a = WJE_GET;
 

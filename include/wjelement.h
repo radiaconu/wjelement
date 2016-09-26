@@ -216,7 +216,7 @@ EXPORT XplBool		WJEMergeObjects(WJElement to, WJElement from, XplBool overwrite)
 	If 'last' is non-NULL then the next match will be returned instead, allowing
 	enumeration of multiple matching elements.
 */
-EXPORT WJElement	_WJEGet(WJElement container, char *path, WJElement last, const char *file, const int line);
+EXPORT WJElement	_WJEGet(WJElement container, const char *path, WJElement last, const char *file, const int line);
 #define WJEGet( c, p, l )	_WJEGet( (c), (p), (l), __FILE__, __LINE__ )
 
 typedef enum {
